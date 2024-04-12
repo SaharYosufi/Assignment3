@@ -1,0 +1,378 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "Lobster", sans-serif;
+     
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+header div{
+    background-color: #B4B4B8;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    position: sticky;
+    margin: 0%;
+    
+}
+
+header div p {
+    display: flex;
+    position: relative;
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    font-size: 200%;
+    color: black;
+    transition-duration: 0.5s;
+    align-items: center;
+    justify-content: center;
+}
+
+header div p:hover{
+    color: pink;
+}
+
+header div ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10%;
+    height: 20;
+    width: 400;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+    border-radius: 10%;
+
+}
+
+header div ul li {
+    display: flex;
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    font-size: 100%;
+    height: 300%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10%;
+    width: 400;
+    transition-duration: 0.3s;   
+    
+}
+
+header div ul li a {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    border-radius: 10%;
+    height: 100%;
+    align-items: center;
+    width: 300%;
+    justify-content: center;
+    
+}
+
+header div ul li:hover {
+    background-color: #F2EFE5;
+    transform: translate(0,-1.5%);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+
+.catagories {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 90%;
+    height: 100%;
+}
+
+.catagories div {
+    padding: 0%;
+    background-color: #E3E1D9;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    border-radius: 3%;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    
+}
+
+.catagories div:hover img{
+    transform: scale(1.05);
+    filter: brightness(70%);
+}
+
+.catagories div h3{
+    position: absolute;
+    bottom:2% ;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 1s;
+    font-size: 100%;
+    opacity: 0%;
+
+}
+
+.catagories div img{
+    transition: 0.5s;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.catagories div:hover h3{
+    opacity: 100%;
+}
+
+.ouroffer{
+    width: 90%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.ouroffer div{
+    width: 250px;
+    padding: 0%;
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 250px 100px 50px;
+    grid-template-columns: 1fr;
+    height: 400px;
+    gap: 3px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #E3E1D9;
+    position: relative;
+    transition-duration: 500ms;
+
+}
+
+.ouroffer div:hover { 
+    transform: rotate(-5deg);
+}
+
+.ouroffer div img{
+    width: 250px;
+    height: 250px;
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.ouroffer h2{
+    width: 250px;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.ouroffer button{
+    width: 250px;
+    height: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+
+}
+
+.ouroffer button a{
+    width: 250px;
+    height: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 500ms;
+}
+
+.ouroffer button a:hover{
+    background-color: pink;
+    cursor: pointer;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 90%;
+}
+
+.detaill-div{
+    width: 90%;
+    border-radius: 3%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    gap: 60px;
+    padding: 0%;
+    background-color: #E3E1D9;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.detaill-div:hover .detaillp{
+    right: 0;
+}
+
+.detaill-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detaillp{
+    transition: 1.5s;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 100%;
+    position: absolute;
+    background: #1f3d4738 ;
+    backdrop-filter: blur(5px) ;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detailtitle{
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: 500;
+    margin-left: 20px;   
+}
+
+.detaillp p{
+    font-size: 100%;
+    line-height: 25px;
+    font-weight: 400;
+    margin: 20px 30px;
+}
+
+.detaill-but{
+    color: #1f3d47;
+    background: #8fabba;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    width: 120px;
+    margin-left: 20px;
+    transition-duration: 500ms;
+}
+
+.detaill-but:hover{
+    background-color: pink;
+    cursor: pointer;
+}
+
+footer{
+    background-color:#B4B4B8;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 75%;
+    width: 100%;
+    height: 25px;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    align-items: center;
+}
+
+.review div{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width: 90%;
+    gap: 10px;
+    height: 50%;
+    align-items: center;
+    justify-content: left;
+}
+
+.review{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: left;
+    width: 100%;
+    position: relative;
+    left: 20%;
+    margin-bottom: 50px;
+}
+
+#ali{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#pa{
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    display: flex;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: #d1e5ff;
+
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(black, gray);
+
+}
